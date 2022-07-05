@@ -1,0 +1,221 @@
+/*===================================================*\
+            CHAMADA PRINCIPAL (SLIDER)
+\*===================================================*/
+
+.container-fluid {
+    padding: 0;
+}
+
+.carousel-item img {
+    height: 650px;
+}
+
+.carousel-caption {
+    background-color: #000;
+    opacity: 0.79;
+    border-radius: 30px;
+}
+
+.carousel-caption h5 {
+    font-size: 50px;
+}
+
+.carousel-caption p {
+    font-size: 22px;
+    font-weight: 300;
+    color: #FFF;
+}
+
+.carousel-indicators .active {
+    background-color: #191970;
+}
+
+@media(max-width:   1140px) {
+    .carousel-caption h5 {
+        font-size: 40px;
+        margin-bottom: 20px;
+    }
+
+    .carousel-caption p {
+        font-size: 20px;
+        font-weight: 300;
+        margin-bottom: 80px;
+    }
+}
+
+@media(max-width:   800px) {
+    .carousel-caption h5 {
+        font-size: 35px;
+        margin-bottom: 20px;
+    }
+
+    .carousel-caption p {
+        margin-bottom: 60px;
+    }
+
+    .carousel-item img {
+        height: 600px;
+    }
+}
+
+@media(max-width:   710px) {
+    .carousel-caption h5 {
+        font-size: 22px;
+        margin-bottom: 12px;
+    }
+
+    .carousel-caption p {
+        display: none;
+    }
+
+    .carousel-item img {
+        height: 400px;
+    }
+}
+
+/*===================================================*\
+                    BOTÃO
+\*===================================================*/
+
+.main-btn { /*BOTÃO*/
+    background-color: #191970;
+    display: inline-block; /*FAZ ELE ACEITAR LARGURA E ALTURA*/
+    color: #FFF;
+    text-transform: uppercase; /*DEIXA EM CAIXA ALTA*/
+    text-decoration: none; /*TIRA O SUBLINHADO*/
+    width: 200px;
+    right: 80px;
+    padding: 10px 20px;
+    border-radius: 30px;
+    border: 3px solid transparent;
+    transition: .5s; /*DEIXA AS TRANSIÇÕES MAIS 'SUAVES'*/
+}
+
+.main-btn:hover {
+    text-decoration: none;
+    color: #FFF;
+    background-color: transparent;
+    border-color: #191970;
+}
+
+/*===================================================*\
+                    BUDISMO
+\*===================================================*/
+
+.budismo__titulo {
+    font-weight: 800; 
+    font-size: 250%;
+    text-align: center;
+    padding-bottom: 5%;
+    color: #191970;
+}
+
+.budismo__texto {
+    font-size: 120%;
+    text-align: justify;
+}
+
+/*===================================================*\
+                PONTOS TURISTICOS
+\*===================================================*/
+
+.pontos__titulo {
+    font-weight: 800;
+    font-size: 250%;
+    text-align: center;
+    color: #191970;
+}
+
+.pontos__texto {
+    font-size: 120%;
+    text-align: justify;
+    padding: 5%;
+}
+
+.pontos__texto i {
+    color: #8B0000;
+    padding-right: 15px;
+    font-size: 140%;
+}
+
+.pontos__texto span {
+    color: #8B0000;
+    font-weight: 600;
+    font-size: 140%;
+}
+
+/*===================================================*\
+                EVENTOS CULTURAIS
+\*===================================================*/
+
+.eventos__titulo {
+    font-weight: 800;
+    font-size: 250%;
+    text-align: center;
+    color: #191970;
+}
+
+.eventos__texto {
+    font-size: 120%;
+    text-align: justify;
+    padding: 5%;
+}
+
+.eventos__texto i {
+    color: #8B0000;
+    padding-right: 15px;
+    font-size: 140%;
+}
+
+.eventos__texto span {
+    color: #8B0000;
+    font-weight: 600;
+    font-size: 140%;
+}
+
+/*===================================================*\
+                    RODAPÉ
+\*===================================================*/
+
+.contato__titulo {
+    text-align: center;
+    font-weight: bold;
+    font-size: 250%;
+    color: #FFF;
+}
+
+.contato__titulo::after {
+    content: ""; /*conteudo vazio*/
+    border-top: 3px solid #FFF;
+    width: 15%; /*comprimento utilizado*/
+    /*
+    utilizamos o posicionamento (position) para indicar onde esse novo elemento
+    deverá ficar
+    */
+    position: absolute;
+    top: 25px;
+    left: 42.5%;
+}
+
+.contato__info {
+    text-align: center;
+}
+
+.contato__info i {
+    font-size: 20px; /*tamanho do icone*/
+    color: #FFF; /*cor do icone*/
+    border: 2px solid #FFF; /*borda do icone*/
+    padding: 12px; /*espaçamento interno do icone*/
+    border-radius: 50%; /*arredondamento dos cantos da borda*/
+    margin-bottom: 15px; /*adiciona um espaço entre icone e texto*/
+}
+
+.rodape {
+    text-align: center;
+    padding-top: 10px;
+    color: #FFF;
+}
+
+.rodape span {
+    font-weight: 700;
+}

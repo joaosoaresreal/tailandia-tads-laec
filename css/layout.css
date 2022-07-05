@@ -1,0 +1,51 @@
+header,
+.navbar {
+    background-color: #191970;
+}
+
+#nav-container {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+#logo {
+    width: 50px;
+    padding-left: 5%;
+}
+
+.layout-budismo {
+    padding: 2%;
+}
+
+.layout-budismo img {
+    padding: 1px;
+}
+
+.layout-pontos {
+    padding: 1%;
+}
+
+.layout-pontos img {
+    padding: 1px;
+}
+
+.layout-eventos {
+    padding: 2%;
+    position: relative;
+}
+
+.layout-eventos img {
+    padding: 1px;
+}
+
+.layout-contato {
+    border-top: 5px solid #000;
+    background-color: #191970;
+    padding: 2%;
+    position: relative;
+}
+
+.layout-rodape {
+    background-color: #000;
+    padding: 1px;
+}

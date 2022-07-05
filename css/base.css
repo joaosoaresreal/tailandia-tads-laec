@@ -1,0 +1,15 @@
+/*===================================================*\
+                    BASE DO SITE
+\*===================================================*/
+body {
+    font-family: 'Tiro Telugu', sans-serif;
+    background-color: #DCDCDC;
+}
+
+.container {
+    padding: 0;
+}
+
+.row {
+    margin: 0;
+}

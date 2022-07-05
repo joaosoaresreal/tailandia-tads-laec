@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailândia</title>
+    <!--icone na barra de titulos (barra do navegador)-->
+    <link rel="shortcut icon" href="img/bandeira-favicon.ico">
+    <!-- BOOTSTRAP - Pacote de bibliotecas CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- BOOTSTRAP - Pacote de scripts em JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <!-- FONTAWESOME - Kit de icones para o projeto -->
+    <script src="https://kit.fontawesome.com/1f0c7a2d5d.js" crossorigin="anonymous"></script>
+    <!-- FONTES - Estilo dos textos (google fonts) -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <!--CSS-->
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/components.css">
+</head>
+
+<body>
+    <!--BARRA DE NAVEGAÇÃO-->
+    <!--é regra, semanticamente, uma barra deve usar o header-->
+    <header>
+        <!--container é do bootstrap-->
+        <div class="container" id="nav-container">
+            <!--https://getbootstrap.com/docs/5.1/components/navbar/-->
+            <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+                <a class="navbar-brand" href="#">
+                    <img id="logo" src="./img/bandeira.png" alt="Bandeira da Tailandia"> Tailândia
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-links"
+                    aria-controls="navbar-links" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbar-links">
+                    <!--justify-content-end -> coloca os elementos do outro lado-->
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#budismo">Budismo</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#pontos">Pontos Turisticos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#eventos">Eventos Culturais</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contato">Contato</a>
+                        </li>
+                    </ul>
+
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!--CHAMADA PRINCIPAL-->
+    <main>
+        <div class="container-fluid">
+            <!--Carrossel de imagens-->
+            <!--https://getbootstrap.com/docs/5.1/components/carousel/ -> With captions-->
+            <div id="mainSlider" class="carousel slide" data-bs-ride="carousel">
+                <!--indicadores do slide-->
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#mainSlider" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#mainSlider" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#mainSlider" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <!--Imagens-->
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="img/banner1.jpg" class="d-block w-100" alt="Comidas Típicas">
+                        <div class="carousel-caption d-md-block">
+                            <h5>Comidas Típicas</h5>
+                            <p>Com aromas intensos e sabores picantes, a comida tailandesa tem fama no mundo todo</p>
+                            <a href="#" class="main-btn">SAIBA MAIS</a>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/banner2.jpg" class="d-block w-100" alt="Elephant Jungle Sanctuarry">
+                        <div class="carousel-caption d-md-block">
+                            <h5>Elephant Jungle Sanctuarry</h5>
+                            <p>Saiba mais sobre a história e o comportamento dos animais</p>
+                            <a href="#" class="main-btn">SAIBA MAIS</a>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/banner3.jpg" class="d-block w-100" alt="Wat Plai Laem">
+                        <div class="carousel-caption d-md-block">
+                            <h5>Wat Plai Laem</h5>
+                            <p>Templo bastante visitado na ilha de Samui, próximo ao Big Buddha</p>
+                            <a href="#" class="main-btn">SAIBA MAIS</a>
+                        </div>
+                    </div>
+                </div>
+                <!--Botões laterais para passagem do slide-->
+                <button class="carousel-control-prev" type="button" data-bs-target="#mainSlider" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#mainSlider" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Próximo</span>
+                </button>
+            </div>
+        </div>
+    </main>
+
+    <!--Budismo-->
+    <div id="budismo" class="layout-budismo">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="budismo__imagem">
+                        <img class="img-fluid" src="./img/buda1.jpg" alt="Templo Buda">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="budismo__titulo">
+                        <p>Budismo</p>
+                    </div>
+                    <div class="budismo__texto">
+                        <p>A religião sempre fez parte do dia a dia dos tailandeses. Não é à toa que cerca de 95% da
+                            população é praticante do budismo Theravada, que é a religião oficial do país. Ele tem como
+                            base os ensinamentos do Buda, que é conhecido também como “c” ou “nee Siddhartha Gautama”.
+                            O budismo é considerado não só uma religião, mas também uma filosofia. Nele estão mescladas
+                            várias outras crenças espirituais que surgiram do hindu séculos atrás. Na maioria das casas
+                            tailandesas e nos templos há a chamada "casa dos espíritos” do lado de fora, que são lugares
+                            onde se colocam as oferendas para afastar os males e pedir benção.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!--Pontos turisticos-->
+    <div id="pontos" class="layout-pontos">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="pontos__titulo">
+                        <p>Pontos Turisticos</p>
+                    </div>
+                    <div class="pontos__texto">
+                        <p>
+                            <i class="fa fa-map-pin"></i> <span>Wat Chaiwatthanaram</span>
+                        </p>
+                        <p>
+                            Templo budista situado na cidade histórica de Ayutthaya, na margem oeste do rio Chao Phraya.
+                            É um dos templos mais conhecidos de Ayutthaya e uma grande atração turística tailandesa. O
+                            templo foi construído em 1630 pelo rei Prasat Thong, como o primeiro templo do seu reinado e
+                            um memorial da residência de sua mãe nessa área. O nome do templo significa, literalmente,
+                            "Templo do reinado longo e era glorioso"
+
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <img class="img-fluid" src="./img/pontos1.jpg" alt="Wat Chaiwatthanaram">
+                </div>
+
+                <div class="col-md-6">
+                    <img class="img-fluid" src="./img/pontos2.jpg" alt="Praia em Maya Bay">
+                </div>
+                <div class="col-md-6">
+                    <div class="pontos__texto">
+                        <p>
+                            <i class="fa fa-map-pin"></i> <span>Praia em Maya Bay</span>
+                        </p>
+                        <p>
+                            Cenário do filme “A Praia” (1999) estrelado por Leonardo di Caprio
+                        </p>
+                        <p>
+                            A Tailândia é um paraíso natural. O país do sudeste asiático possui praias lindas, de tirar
+                            o fôlego de qualquer turista. Maya Bay fica na ilha de
+                            Phi Phi Lee, uma pequena ilha que se transformou em parque nacional. A ilha faz parte do
+                            arquipélago de Phi Phi e fica em frente a ilha Phi Phi Don, essa por sua vez habitada e
+                            cheia de hotéis que recebem turistas do mundo inteiro, sobretudo jovens.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="pontos__texto">
+                        <p>
+                            <i class="fa fa-map-pin"></i> <span>Mercado Chatuchak</span>
+                        </p>
+                        <p>
+                            Um dos maiores mercados a céu aberto do mundo, e com os preços baixos. Nele existem mais de
+                            15.000 barracas e mais de 200.000 pessoas o visitam por dia. O ambiente do mercado de
+                            Chatuchak é ideal para pechinchar, seu único inconveniente é que só abre aos finais de
+                            semana e feriados. Por lá, você realmente vai encontrar de tudo. Além disso, o passeio
+                            também é
+                            imperdível até para quem não está querendo fazer compras: o Mercado de Chatuchak reúne
+                            cores, movimento e tudo que há de mais autêntico na cultura tailandesa e conta até mesmo com
+                            uma galeria de arte
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <img class="img-fluid" src="./img/pontos3.jpg" alt="Mercado Chatuchak">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--EVENTOS CULTURAIS-->
+    <div id="eventos" class="layout-eventos">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <img class="img-fluid" src="./img/eventos2.jpg" alt="Festival das Luzes">
+                </div>
+                <div class="col-md-6">
+                    <div class="eventos__titulo">
+                        <p>Eventos Culturais</p>
+                    </div>
+                    <div class="eventos__texto">
+                        <p>Os tailandeses são conhecidos pelo seu espírito livre e simpatia.
+                            Eles também criaram algumas das festas mais incríveis do mundo, regadas a muita dança e
+                            felicidade.
+                        </p>
+                        <p>
+                            <i class="fa fa-location-arrow"></i> <span>Festival das Luzes</span>
+                        </p>
+                        <p>Acontece em novembro no Loi Krathong, oferendas
+                            como flores, velas e incensos em barquinhos feitos de folhas de bananeira são soltas no rio
+                            Chao Phraya para pedir boas energias.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="eventos__texto">
+                        <p>
+                            <i class="fa fa-location-arrow"></i> <span>Songkran</span>
+                        </p>
+                        <p>O Ano Novo Tailandês acontece nos meses de abril. Trata-se do maior festival da Tailândia,
+                            onde as pessoas vão pras ruas por pelo menos
+                            3 dias, celebrar o Ano Novo com muita água.
+                        </p>
+                        <p>
+                            Originalmente, o ritual envolve lavar as imagens de Buda como um gesto de respeito. Os
+                            tailandeses usavam essa mesma água “abençoada” para então molhar seus familiares e idosos,
+                            como símbolo de prosperidade e boa fortuna.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <img class="img-fluid" src="./img/eventos3.jpg" alt="Songkran - Ano Novo Tailândes">
+                </div>
+
+                <div class="col-md-6">
+                    <img class="img-fluid" src="./img/eventos4.jpg" alt="Monkey Banquet Festival">
+                </div>
+                <div class="col-md-6">
+                    <div class="eventos__texto">
+                        <p>
+                            <i class="fa fa-location-arrow"></i> <span>Monkey Banquet Festival</span>
+                        </p>
+                        <p>
+                            Realizado em Lopburi, (150km de Bangkok), no último domingo do
+                            mês de novembro. Não sendo um evento tradicional ou religioso,
+                            existe desde o início dos anos 80. É uma festa que tem como objetivo agradecer aos primatas
+                            que habitam e fazem parte desta cidade, por terem sido ao longo destes anos, um forte motivo
+                            de atração turística.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--CONTATO-->
+    <div id="contato" class="layout-contato">
+        <div class="container">
+            <div class="row">
+                <div class="contato__titulo">
+                    <p>Entre em contato e saiba mais</p>
+                </div>
+                <div class="contato__info">
+                    <a href="http://facebook.com" target="_blank"><i class="fa fa-facebook"></i></a>
+                    <a href="http://instagram.com" target="_blank"><i class="fa fa-instagram"></i></a>
+                    <a href="http://twitter.com" target="_blank"><i class="fa fa-twitter"></i></a>
+                    <a href="https://api.whatsapp.com/send?phone=556787654321" target="_blank"><i class="fa fa-whatsapp"></i></a>
+                    <a href="http://telegram.org" target="_blank"><i class="fa fa-telegram"></i></a>
+                    <a href="tel:+5567987654321"><i class="fas fa-phone"></i></a>
+                    <a href="http://gmail.com" target="_blank"><i class="fa fa-envelope"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--RODAPÉ-->
+    <footer class="layout-rodape">
+        <div class="rodape">
+            <p>Desenvolvido por <span>João Soares e Sandra Sedano</span> - © 2022</p>
+        </div>
+    </footer>
+
+    <!--JavaScript-->
+    <script src="js/script.js"></script>
+</body>
+
+</html>
