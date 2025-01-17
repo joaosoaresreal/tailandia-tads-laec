@@ -3,6 +3,14 @@ header,
     background-color: #191970;
 }
 
+.navbar-brand {
+    margin-left: 7%;
+}
+
+.navbar-collapse {
+    margin-right: 7%;
+}
+
 #nav-container {
     padding-top: 0;
     padding-bottom: 0;
